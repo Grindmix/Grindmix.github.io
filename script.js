@@ -1,7 +1,7 @@
 "use strict"
 
 let end = document.querySelector('#end');
-end.classList.add('closed')
+end.classList.add('closed');
 
 function randomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
