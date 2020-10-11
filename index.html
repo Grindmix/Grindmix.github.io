@@ -6,17 +6,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="main">
-  <p>main</p>
-  <button id="Switch", onclick="changeButton();">Click me</button>
+
+<div class="main", id='mainMenu'>
+  <p>Поле чудес</p>
+  <button onclick="startGame()">Начать игру</button>
 </div>
 
-<div class="game">
-  <p>game</p>
+<div class="game", id='GameDiv'>
+ <div class="liv", id="lives"></div>
+  <input type="text", class="inputField", id='input'>
+  <button class="checkButton", onclick="check()">Проверить</button>
+ <div class="cardsDisplay", id='cards'></div>
+  <div class="descript", id="description"></div>
 </div>
 
-<div class="end">
-  <p>end</p>
+<div class="end", id='EndGame'>
+  <p class="endHead", id='eHead'>end</p>
+  <button class="Switch", onclick="startGame()">Начать сначала</button>
 </div>
 
 <script src="script.js" charset="utf-8"></script>
