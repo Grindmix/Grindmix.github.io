@@ -10,5 +10,6 @@ function randomInt(max) {
 function changeButton() {
   let menu = document.querySelector('#main');
   let game = document.querySelector('#game');
+
   menu.style.display = 'none';
 }
