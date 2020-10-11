@@ -104,19 +104,29 @@ function openCard(index){
 
 function endGame(result){
   if(result == false){
-  eHead.textContent = 'Ты проиграл';
+  appendToStorage('wins', 0);
+  eHead.textContent = 'Ты проиграл,' + 'Побед: ' + localStorage.getItem('wins');
   game.style.display = 'none';
   end.style.display = 'inline';
   eHead.style.color = 'red';
   }
   else{
-  eHead.textContent = 'Ты выиграл';
+  appendToStorage('wins', 1);
+
+  eHead.textContent = 'Ты выиграл,' + 'Побед: ' + localStorage.getItem('wins');
   game.style.display = 'none';
   end.style.display = 'inline';
   eHead.style.color = 'green';
   }
 }
 
+function appendToStorage(name, data){
+    var old = localStorage.getItem(name);
+    if(old === null) old = 0;
+    const dataINT = parseInt(data);
+    const oldINT = parseInt(old);
+    localStorage.setItem(name, oldINT + dataINT);
+}
 
 var words = [
 {
