@@ -1,2 +1,2 @@
 # Поле чудес!
-[Играть](https://www.Grindmix.github.io)
+[Играть](https://grindmix.github.io/)
