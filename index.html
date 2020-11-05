@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic tac toe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div>
+          <button type="button", id="new", onclick="newGame()">New game</button>
+          <input id="cellSize", type="number">
+      </div>
+
+      <table>
+        <tr>
+          <td class="cell", id='row0,column0', onclick="turn(0, 0)"></td>
+          <td class="cell", id='row0,column1', onclick="turn(0, 1)"></td>
+          <td class="cell", id='row0,column2', onclick="turn(0, 2)"></td>
+        </tr>
+        <tr>
+          <td class="cell", id='row1,column0', onclick="turn(1, 0)"></td>
+          <td class="cell", id='row1,column1', onclick="turn(1, 1)"></td>
+          <td class="cell", id='row1,column2', onclick="turn(1, 2)"></td>
+        </tr>
+        <tr>
+          <td class="cell", id='row2,column0', onclick="turn(2, 0)"></td>
+          <td class="cell", id='row2,column1', onclick="turn(2, 1)"></td>
+          <td class="cell", id='row2,column2', onclick="turn(2, 2)"></td>
+        </tr>
+
+      </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
