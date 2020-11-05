@@ -64,9 +64,9 @@ function check() {
   }
   else if (cells[6] != '' && cells[7] != '' && cells[8] != '' // row 3
   && cells[6] == cells[7] && cells[7] == cells[8]) {
-    cell[3].style.background = 'yellow';
-    cell[4].style.background = 'yellow';
-    cell[5].style.background = 'yellow';
+    cell[6].style.background = 'yellow';
+    cell[7].style.background = 'yellow';
+    cell[8].style.background = 'yellow';
     cell[6].style.color = 'black';
     cell[7].style.color = 'black';
     cell[8].style.color = 'black';
