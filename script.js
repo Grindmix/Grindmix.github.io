@@ -3,14 +3,14 @@
 let cell = document.getElementsByClassName('cell');
 let cells = []
 let turnOrder = true;
-createCells();
-
 
 function createCells() {
   for (var i = 0; i < cell.length; i++){
     cells.splice(i, 1 ,cell[i].textContent);
   }
 }
+
+createCells();
 
 function turn(row, column) {
   let elem = document.getElementById(`row${row},column${column}`);
