@@ -3,6 +3,14 @@
 let cell = document.getElementsByClassName('cell');
 let cells = []
 let turnOrder = true;
+createCells();
+
+
+function createCells() {
+  for (var i = 0; i < cell.length; i++){
+    cells.splice(i, 1 ,cell[i].textContent);
+  }
+}
 
 function turn(row, column) {
   let elem = document.getElementById(`row${row},column${column}`);
@@ -38,12 +46,12 @@ function newGame() {
     }
   }
   turnOrder = true;
+  createCells();
 }
 
+// Да знаю выглядит ужасно, сделал что мог
+
 function check() {
-  for (var i = 0; i < cell.length; i++){
-    cells.splice(i, 1 ,cell[i].textContent);
-  }
   if (cells[0] != '' && cells[1] != '' && cells[2] != '' // row 1
   && cells[0] == cells[1] && cells[1] == cells[2]) {
     cell[0].style.background = 'yellow';
