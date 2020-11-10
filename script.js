@@ -99,7 +99,7 @@ function winColumn() {
       paint(`col${i}`);
     }
     else if (columnIs(columns[i], 'O')) {
-      paint(`row${i}`);
+      paint(`col${i}`);
     }
   }
 }
